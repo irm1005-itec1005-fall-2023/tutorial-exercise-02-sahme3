@@ -28,9 +28,9 @@
     <nav>
       <h3>Site Menu</h3>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="random.php">About us</a></li>
-        <li><a href="about.php">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
     </header>
@@ -51,12 +51,16 @@
     </p>
       <ul>
         <li> 2,716 dwellings granted land use permissions through Official Plan or Zoning By-law Amendments</li>
+        <ul>
         <li>10 of which were not-for-profit dwellings</li>
+      </ul>
         <li>4,621 dwellings approved through Plan of Subdivision, Plan of Condominium, Site Plan Control, Minor Variance, and Severance applications</li>
         <li>3,187 net dwellings issued building permits</li>
         <li>1,626 housing starts</li>
         <li>14,945 dwellings under construction</li>
+        <ul>
         <li>579 of which are not-for-profit dwellings</li>
+      </ul>
         <li>2,135 dwellings where construction was completed</li>
       </ul>
               <!-- Data Source: https://pub-ottawa.escribemeetings.com/filestream.ashx?DocumentId=139208 -->
@@ -267,13 +271,96 @@
       to provide your feedback.</p>
 
       <!---Form------->
+<form action="">
+<fieldset>
+<legend> Personal Information:</legend>
+<label for="name">Name</label>
+<input id="name" type="text" placeholder="John Doe" required minlength="2" maxlength="30" size="30" autocomplete="full-name" required />
+<label for ="email">Email</label>
+<input id="email" type="email" placeholder="johndoe@gmail.com" required/>
+<label for="phone">Phone</label>
+<input id="phone" type="tel" placeholder="613-555-1234" required />
 
+<label for="Ward">Ward</label>
+<select id="ward" name="ward" required>
+            <option value="">Select your ward</option>
+            <option value="Ward 1">Ward 1</option>
+            <option value="Ward 2">Ward 2</option>
+            <option value="Ward 3">Ward 3</option>
+            <option value="Ward 4">Ward 4</option>
+            <option value="Ward 5">Ward 5</option>
+            <option value="Ward 6">Ward 6</option>
+            <option value="Ward 7">Ward 7</option>
+            <option value="Ward 8">Ward 8</option>
+            <option value="Ward 9">Ward 9</option>
+            <option value="Ward 10">Ward 10</option>
+            <option value="Ward 11">Ward 11</option>
+            <option value="Ward 12">Ward 12</option>
+            <option value="Ward 13">Ward 13</option>
+            <option value="Ward 14">Ward 14</option>
+            <option value="Ward 15">Ward 15</option>
+            <option value="Ward 16">Ward 16</option>
+            <option value="Ward 17">Ward 17</option>
+            <option value="Ward 18">Ward 18</option>
+            <option value="Ward 19">Ward 19</option> 
+            <option value="Ward 20">Ward 20</option>
+            <option value="Ward 21">Ward 21</option>
+            <option value="Ward 22">Ward 22</option>
+            <option value="Ward 23">Ward 23</option>
+            <option value="Ward 24">Ward 24</option>
+</select>
+</fieldset>
 
+<fieldset>
+<legend>Feedback:</legend>
+<label for="Feedback"></label>
+<textarea id="Feedback" placeholder="Enter your feedback here" rows="5" required></textarea>
+<label for="Subject/topic">Subject/topic</label>
+<input id="Subject/topic" type="text"  required />
 
+<label>feedback type: </label> 
+  <input type="radio" id="suggestion" name="feedback type" value="suggestion" required />
+  
+  <label for="suggestion">Suggestion</label>
+  <input type="radio" id="concern" name="feedback type" value="concern" required />
+  <label for="concern">Concern</label>
+  <input type="radio" id="Appreciation" name="feedback type" value="Appreciation" required />
+  <label for="Appreciation">Appreciation</label>
 
+  <label for="Feedback Details:">Feedback Details:</label>
+  <textarea id="Feedback Details:" name="Feedback Details:" rows="5" cols="33" required></textarea>
+  <label for ="Priority Level">Priority Level</label>
+  <select id="Priority Level" name="Priority Level" required>
+            <option value="">Select your Priority Level</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+  </select>
+  <label for="Location:"> Location(if applicable):</label>
+  <input id="Location:" type="text" placeholder="Enter your location here" required />
+</fieldset>
+<fieldset>
+<legend>Follow-up Information:</legend>
+<label for="I would like to receive a follow-up response.">I would like to receive a follow-up response.</label>
+<label for="Preffered method of contact:">Preffered method of contact</label>
+<select id="Preffered method of contact" name="Preffered method of contact" required>
+            <option value="">Select your Preffered method of contact</option>
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+           </select>
+</fieldset>
 
+<fieldset>
+  <legend>Submit Feedback:</legend>
+  
+  <input type="checkbox" id="consent" name="consent"  required />
+  <label for="consent">I consent to the use of my feedback.</label>
+ 
+  <button type="submit">Submit your feedback</button>
 
+</fieldset>
 
+</form>
 </section>
 </main>
 
@@ -282,9 +369,9 @@
 <nav>
   <h3>Menu</h3>
   <ul>
-    <li><a href="index.php">Home</a></li>
-    <li><a href="random.php">About us</a></li>
-    <li><a href="about.php">Contact</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Contact</a></li>
 </nav>
 <p>&copy; 2023</p>
 </footer>
